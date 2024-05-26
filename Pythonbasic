@@ -1124,3 +1124,63 @@ import random
 # button.pack() 
 
 # window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from tkinter import *
+# from PIL import Image, ImageTk
+
+# def display():
+#     if x.get() == 1:
+#         print("U agree")
+#     else:
+#         print("U don't agree")
+
+# window = Tk()
+
+# # Use PIL to open the image
+# image_path = 'C:\\Users\\VivoBook-1\\Downloads\\py.jpg'
+# image = Image.open(image_path)
+
+# # Convert the image to a PhotoImage object
+# python_photo = ImageTk.PhotoImage(image)
+
+# # Correct variable reference to x
+# x = IntVar()
+
+# # Correct the Checkbutton options
+# check_button = Checkbutton(window,
+#                            text="Do u need to agree?",
+#                            command=display,
+#                            variable=x,
+#                            onvalue=1,
+#                            offvalue=0,
+#                            font=('Arial', 10),  # Corrected 'front' to 'font'
+#                            fg='#1c733c',
+#                            bg='#030303',
+#                            activeforeground='#1c733c',
+#                            activebackground='#030303',
+#                            padx=25,
+#                            pady=10,
+#                            image=python_photo,
+#                            compound='left')
+
+# # Use pack to add the checkbutton to the window
+# check_button.pack()
+
+# # Start the main loop
+# window.mainloop()
