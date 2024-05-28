@@ -498,7 +498,7 @@ import random
 #     @abstractmethod
 #     def go(self):
 #         pass
-#
+
 #     @abstractmethod
 #     def stop(self):
 #         pass
@@ -510,20 +510,20 @@ import random
 # class Motorcycle(Vehicle):
 #     def go(self):
 #         print("You ride the motorcycle")
-#
+
 #     def stop(self):
 #         print("You ride the motorcycle")
-#
+
 # # vehicle= Vehicle()
 # car = Car()
 # motorcycle = Motorcycle()
-#
+
 # # vehicle.go()
 # car.go()
 # motorcycle.go()
 # car.stop()
 # motorcycle.stop()
-#
+
 # class Car:
 #       color = None
 # class Motocycle:
@@ -1007,29 +1007,50 @@ import random
 # if __name__ == '__main__':
 #     main()
 
+#for python console copy and paste it
 # from pyvirtualdisplay import Display
 # from tkinter import *
+# import os
 
-# Start virtual display
-# display = Display(visible=0, size=(800, 600))
-# display.start()
+# # Start virtual display
+# try:
+#     display = Display(visible=0, size=[800, 600])
+#     display.start()
+#     print("Virtual display started successfully.")
+# except Exception as e:
+#     print(f"Error starting virtual display: {e}")
 
-# Instantiate an instance of Tkinter window
-# window = Tk()
-# window.geometry("420x420")
-# window.title("AUNG")
-# icon = PhotoImage(file='image.png')
-# window.iconphoto(True,icon)
-# window.config(background="#2f1075")
-# # Run the Tkinter main loop
-# window.mainloop()
+# # Instantiate an instance of Tkinter window
+# try:
+#     window = Tk()
+#     window.geometry("420x420")
+#     window.title("AUNG")
+    
+#     # Check if the image file exists
+#     image_path = 'image.png'
+#     if os.path.isfile(image_path):
+#         icon = PhotoImage(file=image_path)
+#         window.iconphoto(True, icon)
+#     else:
+#         print(f"Image file '{image_path}' not found.")
+    
+#     window.config(background="#2f1075")
+    
+#     # Run the Tkinter main loop
+#     window.mainloop()
+# except Exception as e:
+#     print(f"Error with Tkinter window: {e}")
 
-# Stop virtual display
-# display.stop()
+# # Stop virtual display
+# try:
+#     display.stop()
+#     print("Virtual display stopped successfully.")
+# except Exception as e:
+#     print(f"Error stopping virtual display: {e}")
+
+
 
 # from tkinter import *   
-
-
 # window = Tk()
 # window.geometry("1000x1000")
 # photo = PhotoImage(file='image.png')
@@ -1125,23 +1146,105 @@ import random
 
 # window.mainloop()
 
+# from tkinter import *
+
+# window = Tk()
+# window.title("User Entry")
+# window.geometry("600x400")
+# def submit():
+#     username = entry_username.get()
+#     password = entry_password.get()
+#     print("HEllo"+username)
+#     print("HEllo"+password)
+# def delete():
+#     entry_username.delete(0,END)
+#     entry_password.delete(0,END)
+# def blackspace():
+#     entry_username.delete(len(entry_username.get())-1,END)
+#     entry_password.delete(len(entry_password.get())-1,END)
+# user_label =Label(window,text="username")
+# user_label.pack(pady=10)
+# entry_username = Entry(window, 
+#               font=("Arial",50),
+#               fg="#00FF00",
+#               bg="black")
+# entry_username.pack(pady=10)
+
+# password_label =Label(window,text="password")
+# password_label.pack(pady=10)
+# entry_password = Entry(window, 
+#               font=("Arial",50),
+#               fg="#00FF00",
+#               bg="black",
+#               show="*")
+# entry_password.pack(pady=10)
+# # entry.insert(0,"AUng")
+# button_frame = Frame(window)
+# button_frame.pack(pady=20)
+
+
+# submit_button = Button(button_frame,
+#                        text="submit",
+#                        command=submit)
+# submit_button.pack(side=LEFT,padx=10)
+# delete_button = Button(button_frame,
+#                        text="delete",
+#                        command=delete)
+# delete_button.pack(side=LEFT,padx=10)
+# backspace_button = Button(button_frame,
+#                        text="blackspace",
+#                        command=blackspace)
+# backspace_button.pack(side=LEFT,padx=10)
+
+# window.mainloop()
+
+
+#for png format 
+# from tkinter import *
+# window = Tk()
+# def display():  #for x=INTvar()
+#     if(x.get()==1):         
+#         print("U agree")
+#     else:
+#          print("U dont agree")
+# # def display():  #for x= BooleanVar()
+# #     if (x.get()):         
+# #         print("U agree")
+# #     else:
+# #          print("U dont agree")
+# # def display():
+# #     if (x.get().upper()=="YES"):         
+# #         print("U agree")
+# #     else:
+# #          print("U dont agree")
+# python_photo = PhotoImage(file='C:\\Users\\USER\\Downloads\\py.png')
+# x = IntVar() 
+# # x =BooleanVar()
+# # x = StringVar()
+# check_button = Checkbutton(window,
+#                            text = "Do u need to agree?",
+#                            variable=x,
+#                            onvalue=1, # for using x= IntVar
+#                            offvalue=0,
+#                         #    onvalue=True,         #for using x= booleanvar
+#                         #    offvalue=False,
+#                         #    onvalue="YES",
+#                         #    offvalue="NO",
+#                            command=display,
+#                            font = ('Arial',10),
+#                            fg ='#1c733c',
+#                            bg='#030303',
+#                            compound='left',
+#                            image=python_photo,
+#                            activebackground='#030303',
+#                            activeforeground='#1c733c')
+# check_button.pack()
+# window.mainloop()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-from tkinter import *
+# # for jpg format
+# from tkinter import *
 # from PIL import Image, ImageTk
 
 # def display():
@@ -1151,11 +1254,9 @@ from tkinter import *
 #         print("U don't agree")
 
 # window = Tk()
-
 # # Use PIL to open the image
-# image_path = 'C:\\Users\\VivoBook-1\\Downloads\\py.jpg'
+# image_path = 'C:\\Users\\USER\\Downloads\\py.jpg'
 # image = Image.open(image_path)
-
 # # Convert the image to a PhotoImage object
 # python_photo = ImageTk.PhotoImage(image)
 
@@ -1182,5 +1283,176 @@ from tkinter import *
 # # Use pack to add the checkbutton to the window
 # check_button.pack()
 
-# # Start the main loop
+#  Start the main loop
+# window.mainloop()
+
+# from tkinter import *
+# def order():
+#     if((x.get()==0)):
+#         print("U order Burger")
+#     elif((x.get())==1):
+#         print("U order the pizza")
+#     elif(x.get()==2):
+#         print("U order the hotdog")
+# def exitaction():
+#     print("See u next time")
+#     window.destroy()
+#     window.quit()
+# window = Tk()
+# window.title("Aung")
+# icon_photo = PhotoImage(file='image.png')
+# window.iconphoto(True,icon_photo)
+# pizzaimage = PhotoImage(file='C:\\Users\\USER\\Downloads\\Pizzza.png')
+# hotdogimage= PhotoImage(file='C:\\Users\\USER\\Downloads\\hotdog.png')
+# burgerimage= PhotoImage(file='C:\\Users\\USER\\Downloads\\Burger.png')
+# food = ['Burger','pizza','hotdog']
+# food_images=[burgerimage,pizzaimage,hotdogimage]
+# x=IntVar()
+# y=StringVar()
+# for index in range(len(food)):
+#     radio_button = Radiobutton(window,
+#                                text=food[index],
+#                                variable=x,
+#                                value=index,
+#                                padx=25,
+#                                font=("Impact",50),
+#                                image=food_images[index],
+#                                compound=LEFT,
+#                                indicatoron=0,
+#                                width=372,
+#                                command=order,
+#                                )
+                         
+#     radio_button.pack(side=TOP,anchor=W)
+# exit_button = Button(window,
+#                          text="Exit",
+#                          compound=RIGHT,
+#                          command=exitaction)
+                             
+# exit_button.pack(anchor=W,padx=10,pady=20,ipadx=194,ipady=30)
+# window.mainloop()
+# from tkinter import *
+# window = Tk()
+# def submit():
+#     print("the temperature is " + str(scale.get()) +" degree")
+# hotimage = PhotoImage(file="C:\\Users\\USER\\Downloads\\hotlogo.png")    
+# hotlabel = Label(image=hotimage)
+# hotlabel.pack()
+# scale = Scale(window,
+#               from_=100,
+#               to=0,
+#               length=400,
+#               orient=VERTICAL,
+#               font=('Arial', 20),
+#               tickinterval=10,
+#               resolution=5,
+#               troughcolor="#05b5eb",
+#               fg= "#b30000",
+#               bg= "#000000"
+            
+# )
+# scale.set(((scale['from']-scale['to'])/2) + scale['to'])
+# scale.pack()
+# coldimage = PhotoImage(file="C:\\Users\\USER\\Downloads\\coldlogo.png")    
+# coldabel = Label(image=coldimage)
+# coldabel.pack()
+# scale_submit = Button(window,
+#                       text="submit",
+#                       command=submit,
+#                       background="red"
+#                       )
+# scale_submit.pack()
+# window.mainloop()
+
+
+
+# from tkinter import *
+
+# def update_label(value):
+#     # Update the label text to the current scale value
+#     label.config(text=value)
+    
+#     # Calculate the new position for the label to keep it next to the slider
+#     scale_range = scale_from - scale_to
+#     label_y = scale.winfo_y() + scale_length - (int(value) - scale_to) * scale_length / scale_range
+#     label.place(x=scale.winfo_x() + scale.winfo_width() + 10, y=label_y)
+
+# # Create the main window
+# window = Tk()
+# window.geometry("500x720")  # Set the size of the window
+# window.title("AUNG")  # Set the title of the window
+# window.config(background="#2f1075")  # Set the background color of the window
+
+# # Define the length and range for the scale
+# scale_length = 600
+# scale_from = 1000
+# scale_to = 0
+
+# # Create a vertical scale widget
+# scale = Scale(window,
+#               from_=scale_from,  # Set the start value of the scale
+#               to=scale_to,  # Set the end value of the scale
+#               length=scale_length,  # Set the length of the scale
+#               orient=VERTICAL,  # Make the scale vertical
+#               font=('Arial', 20),  # Set the font for the scale
+#               tickinterval=100,  # Set the interval for tick marks
+#               resolution=20,  # Set the step size for the scale
+#               command=update_label)  # Bind the update function to the scale
+
+# # Create a label widget to display the current value of the scale
+# label = Label(window, font=('Arial', 20), background="#2f1075", foreground="white")
+# label.place(x=400, y=0)  # Place the label initially
+
+# # Set the scale to a specific initial value
+# initial_value = 500
+# scale.set(initial_value)
+
+# # Update the label to reflect the initial value of the scale
+# update_label(initial_value)
+
+# # Pack the scale widget into the window
+# scale.pack(side=LEFT, padx=20, pady=20)
+
+# # Run the main loop to display the window
+# window.mainloop()
+
+
+
+
+# from tkinter import *
+
+# def update_label(value):
+#     # Update the text on the scale widget to display the current value
+#     scale.configure(label=value)
+
+# Create the main window
+# window = Tk()
+# window.geometry("500x720")
+# window.title("AUNG")
+# window.config(background="#2f1075")
+
+# scale_length = 600
+# scale_from = 1000
+# scale_to = 0
+
+# # Create a scale widget
+# scale = Scale(window,
+#               from_=scale_from,
+#               to=scale_to,
+#               length=scale_length,
+#               orient=VERTICAL,
+#               font=('Arial', 20),
+#               tickinterval=100,
+#               resolution=20,
+# )
+#             #   command=update_label
+
+# # Set the scale to a specific initial value
+# initial_value = 500
+# scale.set(initial_value)
+
+# # Pack the scale widget into the window
+# scale.pack(side=LEFT, padx=20, pady=20)
+
+# # Run the main loop
 # window.mainloop()
