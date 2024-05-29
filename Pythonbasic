@@ -1456,3 +1456,81 @@ import random
 
 # # Run the main loop
 # window.mainloop()
+
+
+
+
+
+from tkinter import *
+food=[]
+# Define the submit function with an argument
+def submit():
+    global food
+    for index ,value  in  enumerate(listbox.curselection()):
+        food.insert(index,listbox.get(value))
+    print("You Ordered:")
+    for index in food:
+        print(index)
+def add():
+    
+      listbox.insert(listbox.size(),entry.get())
+      listbox.config(height=listbox.size())
+      
+def delete():
+    ordernumber =1 
+    for index ,value in enumerate(reversed((listbox.curselection()))):
+       listbox.delete(value)
+       print(f"the deleted item of order  is No.{ordernumber} : {listbox.get(value)} ")
+       ordernumber +=1
+    listbox.config(height=listbox.size())
+def cancel():
+    ordernumber =0
+    global myorders
+    myorders=[]
+    selection_box = listbox.curselection()
+    print("Cancel Orders")
+    
+    for index in selection_box:
+        myorders.append(listbox.get(index))   
+        
+    for ordernumber,value in enumerate(myorders):
+            print(f"the cancel order of the items isno.{ordernumber+1} and  item:{value} ")
+    listbox.select_clear(0,END)
+
+# Create the main window
+window = Tk()
+
+# Create a Listbox widget
+listbox = Listbox(window,
+                  bg="#f7ffde",
+                  font=("Constantia", 25),
+                  width=12,
+                  selectmode=MULTIPLE)
+
+# Add items to the Listbox
+listbox.insert(0, "pizza")
+listbox.insert(1, "pasta")
+listbox.insert(2, "garlic bread")
+listbox.insert(3, "soup")
+listbox.insert(4, "salad")
+listbox.config(height=listbox.size())
+
+# Pack the Listbox widget into the window
+listbox.pack()
+entry = Entry(window)
+entry.pack()
+# Create a Button widget with a lambda function as the command
+add_button = Button(window, command=add,text="add")
+add_button.pack()
+submit_button = Button(window, command=submit,text="Submit")
+submit_button.pack()
+
+delete_button = Button(window, command=delete,text="delete")
+delete_button.pack()
+cancel_button = Button(window, command=cancel,text="cancel")
+cancel_button.pack()
+# Run the main loop to display the window
+window.mainloop()
+
+
+
