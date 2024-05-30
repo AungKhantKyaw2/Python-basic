@@ -1610,6 +1610,44 @@ from tkinter import *
 # window.mainloop()
 
 
+# from tkinter import *
+# from tkinter import messagebox
+# window = Tk()
+# def click():
+    # messagebox.showinfo(title="this is the message box",message="You are the person.")
+    # messagebox.showwarning(title="this is the message box",message="You are the virus.")
+    # messagebox.showerror(title="this is the message box",message="Something went wrong.")
+    # if  messagebox.askokcancel(title="ask ok cancel ",message="Do u want to do something!"):
+    #     print("U did the thing")
+    # else:
+    #     print("You canceled a thing ")
+    # if messagebox.askretrycancel(title="ask ok cancel ",message="Do u want to do something!"):
+    #      print("U retried the thing")
+    # else:
+    #      print("You give up a thing ")
+    # if messagebox.askyesnocancel(title=" yes no  cancel ",message="Do u kije a caje"):
+    #     print("U like cake")
+    # else:
+    #     print("You don't like cake ")
+    # answer =  messagebox.askquestion(title="ask question", message = " Do u like a pie?")
+    # if answer == "yes":
+    #    print('I like pie too')
+    # else:
+        # print('why do u not like pie')
+#     answer =  messagebox.askyesnocancel(title="ask yes no question", message = " Do u like code?", icon = 'error')
+#     if answer == True:
+#        print('I like code')
+#     elif answer==False:
+#         print('I dont like')
+#     else:
+#        print("Responding error")        
+# button = Button(window,
+#                 command=click,
+#                 text='Click me')
+
+# button.pack()
+
+# window.mainloop()
 
 
 
