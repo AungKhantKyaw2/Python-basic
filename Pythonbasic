@@ -1550,15 +1550,21 @@ from tkinter import *
 #       listbox.insert(listbox.size(),entry.get())
 #       listbox.config(height=listbox.size())
 # def delete():
-   
-#     select_indices = list(listbox.curselection())  # Convert to a list to modify in place
-#     print(select_indices)
-#     myorders = []   
-#     # Iterate over selected indices in ascending order
-#     for ordernumber, value in enumerate(select_indices):
-#         print(f"The delete order of the items is no.{ordernumber} and item: {listbox.get(value)}")
-#     # Adjust listbox height
-#     listbox.config(height=listbox.size())
+    select_indices = list(listbox.curselection())  # Convert to a list to modify in place
+    print(len(select_indices))
+    
+    # Iterate over selected indices in descending order
+    for ordernumber in range(len(select_indices) - 1, -1, -1):
+        item = listbox.get(select_indices[ordernumber])
+        if item:  # Check if item is not an empty string
+            print(f"The delete order of the items is no.{ordernumber} and item: {item}")
+            # Delete the item from the listbox
+            listbox.delete(select_indices[ordernumber])
+
+    # Adjust listbox height
+    listbox.config(height=listbox.size())
+
+
 
 # def cancel():
 #     ordernumber =0
