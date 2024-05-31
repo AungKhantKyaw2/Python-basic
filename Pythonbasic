@@ -1563,7 +1563,19 @@ from tkinter import *
 
     # Adjust listbox height
     listbox.config(height=listbox.size())
-
+def delete():
+    
+    select_indices = list(listbox.curselection()) 
+    i=len(select_indices)  # Convert to a list to modify in place
+    ordernumber=0
+    # Iterate over selected indices in ascending order
+    for index, value in enumerate(reversed(select_indices),start=1):
+        while i != len(select_indices)-index:
+            print(f"The order number item of index {i-1} selected delete is {listbox.get(value)}")  
+            i=i-1      
+        listbox.delete(value)
+    # Adjust listbox height
+    listbox.config(height=listbox.size())
 
 
 # def cancel():
