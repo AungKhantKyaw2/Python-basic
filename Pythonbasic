@@ -1667,6 +1667,68 @@ def delete():
 
 # window.mainloop()
 
+# window.mainloop()
+
+
+# from tkinter import *
+# from tkinter import colorchooser
+# window = Tk()
+# window.geometry("420x420")
+# def click():
+#     # color = colorchooser.askcolor()
+#     # print(color)
+#     # colorHex  = color[1]
+#     # print(colorHex)
+#     # color = colorchooser.askcolor()
+#     # window.config(background=color[1])
+#     window.config(background=colorchooser.askcolor()[1])
+# button = Button(text="click me ", command=click
+#                )
+# button.pack()
+
+
+# window.mainloop()
+
+# from tkinter import *
+# import tkinter as tk
+# def submit():
+#     input = text.get("1.0",END)
+#     print(input)
+# root = tk.Tk()
+# text = Text(root,
+#             bg ="light yellow",
+#             font =("Ink Free",25),
+#             height=8,
+#             width=20,
+#             padx=10,
+#             pady=10,
+#             fg="pink")
+# text.pack(ipadx=30,ipady=30)
+# button = Button(root,text="submit",command=submit)
+# button.pack(padx=10,pady=10,ipadx=10,ipady=10)
+# root.mainloop()
+
+# import os
+
+# # Define the path of the new directory and file
+# dir_path = "C:\\Users\\VivoBook-1\\Downloads\\GOd"
+# file_path = os.path.join(dir_path, 'newfile.txt') 
+
+# # Create the directory if it doesn't exist
+# if os.path.isdir(dir_path):
+#     print("This directory already have ")
+# else:
+       
+#     os.makedirs(dir_path, exist_ok=True)
+#     print("create by code with file")
+
+# # Create an empty file in the new directory
+# with open(file_path, 'w') as file:
+#     file.write("This is a text file ")
+#     print(f"{file_path}")
+
+# print(f"File '{file_path}' created successfully in directory '{dir_path}'.")
+
 
 
 
