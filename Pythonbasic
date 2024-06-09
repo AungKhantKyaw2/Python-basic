@@ -1735,6 +1735,161 @@ def delete():
 
 
 
+# from tkinter import*
+# from tkinter import filedialog
+# import os 
+# # def openfile():
+# #     print("open file")
+
+# # def savefile():
+# #     print("Save file")
+
+# # def exitfile():
+# #     print("exit file")
+
+# # def cutfile():
+# #     print("cut file")
+
+# # def copyfile():
+# #     print("cut file")
+
+# # def pastefile():
+# #     print("paste file")
+
+# def openfile():
+#     file_path = filedialog.askopenfilename()
+#     if file_path:
+#         print("Opening file:", file_path)
+#         # Add your code to open the file here
+#         os.startfile(file_path)
+
+# def savefile():
+#     file_path = filedialog.asksaveasfilename( filetypes=(
+#             ("Text files", "*.txt"),
+#             ("All files", "*.*")
+#         ),defaultextension=".txt")
+#     if file_path:
+#         print("Saving file:", file_path)
+#         with open(file_path,'w') as file:
+#             file.write("aung")
+#         # Add your code to save the file here
+#         print("Current working directory:", os.getcwd())
+
+        
+
+
+# def exitfile():
+#     window.quit()
+
+# def cutfile():
+#     print("cut file")
+
+# def copyfile():
+#     print("cut file")
+
+# def pastefile():
+#     print("paste file")   
+# window = Tk()
+# menubar = Menu(window)
+# text_widget = Text(window)
+# window.config(menu=menubar)
+# openimage = PhotoImage(file="open.png")
+# saveimage = PhotoImage(file="save.png")
+# exitimage = PhotoImage(file="exit.png")
+# cutimage = PhotoImage(file="cut.png")
+# copyimage = PhotoImage(file="copy.png")
+# pasteimage = PhotoImage(file="paste.png")
+# fileMenu = Menu(menubar,tearoff=0)
+# menubar.add_cascade(label="File",menu=fileMenu)
+# fileMenu.add_command(label="Open",command=openfile,image=openimage,compound='left')
+# fileMenu.add_command(label="Save",command=savefile,image=saveimage,compound='left')
+# fileMenu.add_separator()
+# fileMenu.add_command(label="Exit",command=exitfile,image=exitimage,compound='left')
+
+# editmenu = Menu(menubar,tearoff=0)
+# menubar.add_cascade(label="Edit",menu=editmenu)
+# editmenu.add_command(label="Cut",command=cutfile,image=cutimage,compound='left')
+# editmenu.add_command(label="Copy",command=copyfile,image=copyimage,compound='left')
+# editmenu.add_separator()
+# editmenu.add_command(label="Paste",command=pastefile,image=pasteimage,compound='left')
+# window.mainloop()
+
+# from tkinter import *
+# from tkinter import filedialog
+# import os 
+
+# class TextEditor:
+#     def __init__(self, window):
+#         self.window = window
+#         self.text_widget = Text(window)
+#         self.text_widget.pack()
+
+#         menubar = Menu(window)
+#         window.config(menu=menubar)
+
+#         # Create image objects for icons
+#         openimage = PhotoImage(file="open.png")
+#         saveimage = PhotoImage(file="save.png")
+#         exitimage = PhotoImage(file="exit.png")
+#         cutimage = PhotoImage(file="cut.png")
+#         copyimage = PhotoImage(file="copy.png")
+#         pasteimage = PhotoImage(file="paste.png")
+
+#         fileMenu = Menu(menubar, tearoff=0)
+#         menubar.add_cascade(label="File", menu=fileMenu)
+#         fileMenu.add_command(label="Open", command=self.openfile, image=openimage, compound='left')
+#         fileMenu.add_command(label="Save", command=self.savefile, image=saveimage, compound='left')
+#         fileMenu.add_separator()
+#         fileMenu.add_command(label="Exit", command=self.exitfile, image=exitimage, compound='left')
+
+#         editmenu = Menu(menubar, tearoff=0)
+#         menubar.add_cascade(label="Edit", menu=editmenu)
+#         editmenu.add_command(label="Cut", command=self.cutfile, image=cutimage, compound='left')
+#         editmenu.add_command(label="Copy", command=self.copyfile, image=copyimage, compound='left')
+#         editmenu.add_separator()
+#         editmenu.add_command(label="Paste", command=self.pastefile, image=pasteimage, compound='left')
+
+#     def openfile(self):
+#         file_path = filedialog.askopenfilename()
+#         if file_path:
+#             print("Opening file:", file_path)
+#             os.startfile(file_path)
+
+#     def savefile(self):
+#         file_path = filedialog.asksaveasfilename(filetypes=(
+#                 ("Text files", "*.txt"),
+#                 ("All files", "*.*")
+#             ), defaultextension=".txt")
+#         if file_path:
+#             print("Saving file:", file_path)
+#             with open(file_path, 'w') as file:
+#                 file.write("aung")
+#             print("Current working directory:", os.getcwd())
+
+#     def exitfile(self):
+#         self.window.quit()
+
+#     def cutfile(self):
+#         selected_text = self.text_widget.selection_get()
+#         self.window.clipboard_clear()
+#         self.window.clipboard_append(selected_text)
+#         self.text_widget.delete("sel.first", "sel.last")
+
+#     def copyfile(self):
+#         selected_text = self.text_widget.selection_get()
+#         self.window.clipboard_clear()
+#         self.window.clipboard_append(selected_text)
+
+#     def pastefile(self):
+#         text_to_paste = self.window.clipboard_get()
+#         self.text_widget.insert(INSERT, text_to_paste)
+
+# # Create the main window
+# window = Tk()
+# text_editor = TextEditor(window)
+
+# # Run the main loop
+# window.mainloop()
 
 
 
