@@ -1892,6 +1892,47 @@ def delete():
 # window.mainloop()
 
 
+# Create the main window
+# window = Tk()
+# window.title("Simple Text Editor")
+
+#without using class
+# # # Create a Text widget
+# # text_widget = Text(window)
+# # text_widget.pack(expand=YES, fill=BOTH)
+
+# # # Create a menu bar
+# # menubar = Menu(window)
+# # window.config(menu=menubar)
+
+# # # Create image objects for icons (assuming images are available)
+# # openimage = PhotoImage(file="open.png")
+# # saveimage = PhotoImage(file="save.png")
+# # exitimage = PhotoImage(file="exit.png")
+# # cutimage = PhotoImage(file="cut.png")
+# # copyimage = PhotoImage(file="copy.png")
+# # pasteimage = PhotoImage(file="paste.png")
+
+# # # Create the File menu
+# # fileMenu = Menu(menubar, tearoff=0)
+# # menubar.add_cascade(label="File", menu=fileMenu)
+# # fileMenu.add_command(label="Open", command=openfile, image=openimage, compound='left')
+# # fileMenu.add_command(label="Save", command=savefile, image=saveimage, compound='left')
+# # fileMenu.add_separator()
+# # fileMenu.add_command(label="Exit", command=exitfile, image=exitimage, compound='left')
+
+# # # Create the Edit menu
+# # editmenu = Menu(menubar, tearoff=0)
+# # menubar.add_cascade(label="Edit", menu=editmenu)
+# # editmenu.add_command(label="Cut", command=cutfile, image=cutimage, compound='left')
+# # editmenu.add_command(label="Copy", command=copyfile, image=copyimage, compound='left')
+# # editmenu.add_separator()
+# # editmenu.add_command(label="Paste", command=pastefile, image=pasteimage, compound='left')
+
+# # # Run the main loop
+# # window.mainloop()
+
+
 
 
 
