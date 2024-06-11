@@ -1933,6 +1933,39 @@ def delete():
 # # window.mainloop()
 
 
+# from tkinter import *
+
+# root =Tk()
+# frame = Frame(root,bg='pink',bd=5,relief='raised',width=2000,height=1000)
+# # frame.pack(side=BOTTOM)
+# # frame.place(relx=1, rely=0.92,anchor='e')
+# frame.place(x=950,y=500)
+# Button(frame,text="W", font=('Calibri',12),width=3).pack(side=TOP)
+# Button(frame,text="A", font=('Calibri',12),width=3).pack(side=LEFT)
+# Button(frame,text="S", font=('Calibri',12),width=3).pack(side=LEFT)
+# Button(frame,text="D", font=('Calibri',12),width=3).pack(side=LEFT)
+
+# root.mainloop()
+# global window1
+# def new_window():
+#     Label1.config(text="This is a text")
+#       # Close the old window if it exists
+#     window1 = Tk()
+
+# # Do something with window1 if needed
+# def new_window1():
+#     root.destroy()
+#     window2 = Tk()
+# from tkinter import*
+# root= Tk()
+# Label1 = Label(root, text="", bg="red")
+# Label1.pack()
+# Button1 =Button(root,text="Create a new window", command=new_window)
+# Button1.pack()
+# Button2 =Button(root,text="Create  new window old is destroyed", command=new_window1)
+# Button2.pack()
+# root.mainloop()
+
 
 
 
