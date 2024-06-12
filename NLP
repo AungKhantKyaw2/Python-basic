@@ -1,0 +1,83 @@
+import sys
+# # Add the path where nltk is installed
+# sys.path.append('E:\\Python librariew')
+# from nltk.stem import PorterStemmer
+# import nltk
+# # nltk.download('punkt')
+# nltk.data.path.append('E:\\Python librariew')
+
+# stemmer = PorterStemmer()
+# words = ["run","runner","ran","runs","easily","fairly"]
+# stemmed_words = [stemmer.stem(word) for word in words]
+
+# # Print the stemmed words
+# print(stemmed_words)
+# Result ['run', 'runner', 'ran', 'run', 'easili', 'fairli']
+--------------------
+
+# import sys
+# sys.path.append('E:\\Python librariew')
+# import nltk
+# from nltk.stem import WordNetLemmatizer
+# import os
+
+# # Specify the NLTK data directory
+# nltk.data.path.append('E:\\Python librariew\\nltk_data')
+
+# # Download the 'wordnet' dataset to the specified directory
+# # nltk.download('wordnet', download_dir='E:/Python librariew/nltk_data')
+
+# # Proceed with the rest of your code
+# word = "running"
+# lemmatizer = WordNetLemmatizer()
+# lemma = lemmatizer.lemmatize(word, pos='v')  # Note: 'v' represents the verb part-of-speech
+# print(lemma)
+#result - run
+
+---------------------------------
+# import sys
+# sys.path.append('E:\\Python librariew')
+# import nltk
+# text = "NLTK is a leaded platform for building Python programs to work with human language data."
+# nltk.data.path.append('E:\\Python librariew')
+# # nltk.download('all',download_dir ='E:\\Python librariew')
+# # Tokenize the text into words
+# words = nltk.word_tokenize(text)
+
+# # Perform part-of-speech tagging
+# tagged_words = nltk.pos_tag(words)
+
+# print("Part-of-Speech Tags:", tagged_words)
+#Part-of-Speech Tags: [('NLTK', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('leaded', 'JJ'), ('platform', 'NN'), ('for', 'IN'), ('building', 'VBG'), ('Python', 'NNP'), ('programs', 'NNS'), ('to', 'TO'), ('work', 'VB'), ('with', 'IN'), ('human', 'JJ'), ('language', 'NN'), ('data', 'NNS'), ('.', '.')]
+----------------------------------------------------------------------
+
+
+# Append the directory containing the NLTK library to the system path
+# import sys
+# sys.path.append('E:\\Python librariew')
+# import nltk
+# nltk.data.path.append('E:\\Python librariew')
+# nltk.download('punkt',download_dir ='E:\\Python librariew\\nltk_data') for no subset attributes of downloaded libraries
+# text = "I You am a god or dog ? How to specify yourself thoroughly"
+# words1 = nltk.word_tokenize(text)
+# print(words1)
+# # Append the directory containing NLTK data to NLTK's data path
+#attach with word entity
+# name = nltk.ne_chunk(nltk.pos_tag(words1))
+# print("Word Groups:", name)
+
+Result ['I', 'You', 'am', 'a', 'god', 'or', 'dog', '?', 'How', 'to', 'specify', 'yourself', 'thoroughly']
+Word Groups: (S
+  I/PRP
+  You/PRP
+  am/VBP
+  a/DT
+  god/NN
+  or/CC
+  dog/VB
+  ?/.
+  How/WRB
+  to/TO
+  specify/VB
+  yourself/PRP
+  thoroughly/RB)
