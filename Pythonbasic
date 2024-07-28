@@ -2026,5 +2026,53 @@ def delete():
 # CancelButton.pack()
 # window.mainloop()
     
+   
+# from tkinter import *
+# window = Tk()
 
+# canvas = Canvas(window, height=500, width=500)
+
+# # canvas.create_line(0,0,500,500,fill='blue',width=5
+# #                 )
+# # canvas.create_rectangle(50,50,250,250,fill='purple')
+# points = [250,0,500,500,0,500]
+
+# canvas.create_polygon(points,fill='yellow',outline='black')
+# canvas.create_arc(0,0,500,500,fill ='green',style='pieslice',start=270,extent=180)
+# create 2D pokemon ball
+
+# canvas.create_arc(0,0,500,500,fill='red',extent = 180,width= 10)
+# canvas.create_arc(0,0,500,500,fill='white',extent = 180,start = 180,width= 10)
+# canvas.create_oval(190,190,310,310, fill='white',width=10)
+
+# canvas.pack()
+# window.mainloop()
+
+# from tkinter import *
+# def dosomething(event):
+#     # print("You pressed"+event.keysym)
+#     label.config(text=event.keysym)
+# window = Tk()
+# window.bind('<Key>',dosomething)
+
+# label = Label(window, font=('Courier',25))
+# label.pack()
+# window.mainloop()
+
+# from tkinter import *
+# def dosomething(event):
+#     print("Mouse coordinate:"+ str(event.x)+","+ str(event.y))
+
+
+# window = Tk()
+# window.bind("<Button-1>",dosomething)#left click
+# window.bind("<Button-2>",dosomething)  #Scroll wheel 
+# window.bind("<Button-3>",dosomething) #right click
+# window.bind("<Button-Release>",dosomething)
+# window.bind("<Enter>",dosomething)   
+# window.bind("<Leave>",dosomething)     
+# window.bind("<Motion>",dosomething)    
+
+
+# window.mainloop()
 
