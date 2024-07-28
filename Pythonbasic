@@ -1967,5 +1967,64 @@ def delete():
 # root.mainloop()
 
 
+# # from tkinter import *
+
+# # window = Tk()
+
+# # TitleLabel= Label(text="Enter your info:" ,font=('Arial',25)).grid(row=0,column=0,columnspan=2)
+
+# # firstNameLabel = Label(window,text="First Name: ",width=20).grid(row=1,column=0)
+# # firstNameEntry= Entry(window).grid(row=1,column=1)
+
+# # lastNameLabel = Label(window,text="Last Name: ",width=20).grid(row=2,column=0)
+# # lastNameEntry= Entry(window).grid(row=2,column=1)
+
+
+# # emailLabel = Label(window,text="Email: ",width=20).grid(row=3,column=0)
+# # emailEntry= Entry(window).grid(row=3,column=1)
+
+# # submit_task = Button(window,text="Submit").grid(row=4,column=0, columnspan=2
+# #                                                 )
+# # window.mainloop()
+#---------------------------------------------------------
+# from tkinter import *
+# from tkinter.ttk import *
+# import time
+# import threading
+# window = Tk()
+# download_running = False
+# def start():
+#     global download_running
+#     GB =100
+#     Speed= 1
+#     download =0
+#     download_running= TRUE
+#     while download<GB and download_running:
+#          time.sleep(0.05)
+#          bar['val']+=(Speed/GB)*100
+#          download +=Speed
+#          percent.set(str(int((download/GB)*100))+"%")
+#          textpercent.set(str(download)+'/'+str(GB)+"GB Completed")
+#          window.update_idletasks()
+#     download_running = False
+# def cancel():
+#     global download_running
+#     download_running = False  
+#     window.destroy()
+# def start_threading():
+#     threading.Thread(target=start).start()
+# percent = StringVar()
+# textpercent= StringVar()
+# bar = Progressbar(window,orient=HORIZONTAL,length=300)
+# bar.pack(padx=10,pady=30)
+
+# percentlabel= Label(window,textvariable=percent).pack()
+# textLabel = Label(window,textvariable=textpercent).pack()
+# downloadButton= Button(window,text="Download",command=start_threading)
+# downloadButton.pack()
+# CancelButton= Button(window,text="Cancel",command=cancel)
+# CancelButton.pack()
+# window.mainloop()
+    
 
 
