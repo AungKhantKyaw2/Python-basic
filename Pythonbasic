@@ -2076,3 +2076,69 @@ def delete():
 
 # window.mainloop()
 
+
+
+
+# from tkinter import *
+# def dragevent(event):
+    
+#     widget1= event.widget
+#     widget1.Startx= event.x
+#     widget1.Starty = event.y
+# def dragmotion(event):
+#     widget1=event.widget
+#     x =widget1.winfo_x()-widget1.Startx +event.x
+#     y=widget1.winfo_y()-widget1.Starty + event.y    
+#     widget1.place(x=x,y=y)
+# window =Tk()
+
+# label = Label(window,bg='red',width=10,height=5)
+# label.place(x=0,y=0)
+
+# label1 = Label(window,bg='blue',width=10,height=5)
+# label1.place(x=100,y=100)
+
+# label.bind("<Button-1>",dragevent)
+# label.bind("<B1-Motion>",dragmotion)
+
+# label1.bind("<Button-1>",dragevent)
+# label1.bind("<B1-Motion>",dragmotion)
+# window.mainloop()
+
+
+
+# from tkinter import *
+# def move_up(event):
+#   if label.winfo_y() > 0:
+#     label.place(x=label.winfo_x(), y=label.winfo_y()-10 )
+# def move_down(event):
+#    if label.winfo_y() < window.winfo_height() -label.winfo_height():  
+#     label.place(x=label.winfo_x(), y=label.winfo_y()+10)
+# def move_left(event):
+#    if label.winfo_x() > 0:    
+#     label.place(x=label.winfo_x()-10, y=label.winfo_y())
+# def move_right(event):
+#   if label.winfo_x() < window.winfo_width() - label.winfo_width(): 
+#     label.place(x=label.winfo_x()+10, y=label.winfo_y())
+# window = Tk()
+# window.geometry("1500x1500")
+# border_frame = Frame(window, bd=5, bg="red")  # Set border width and color
+# border_frame.pack(fill=BOTH, expand=True)  # Fill the window with the frame
+
+# # Create another frame inside the border frame for the content
+# content_frame = Frame(border_frame, bg="white")  # Set background color for content
+# content_frame.pack(fill=BOTH, expand=True, padx=10, pady=10)  # Add padding
+# canvas = Canvas(content_frame, width=100, height=100)
+# canvas.place(x=1400,y=0)
+# # Draw the inverted text (rotated 180 degrees)
+# canvas.create_text(50, 50, text="destination", font=('Arial', 15), fill="black", angle=270)
+# window.bind("<w>",move_up)
+# window.bind("<s>",move_down)
+# window.bind("<a>",move_left)
+# window.bind("<d>",move_right)
+# myimage = PhotoImage(file="redcar.png")
+# label = Label(content_frame,image=myimage)
+# label.place(x=0,y=100)
+
+# window.mainloop()
+
