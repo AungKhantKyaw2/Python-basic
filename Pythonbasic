@@ -2142,3 +2142,148 @@ def delete():
 
 # window.mainloop()
 
+
+# using canva to drive a car
+# from tkinter import *
+
+# def move_up(event):
+#     canvas.move(myimage,0,-10)  
+# def move_down(event):
+#     canvas.move (myimage,0,10)
+# def move_right(event):
+#     canvas.move(myimage,10,0)
+# def move_left(event):
+#     canvas.move(myimage,-10,0)
+
+# window = Tk()
+
+# window.bind("<w>",move_up)
+# window.bind("<s>", move_down)
+# window.bind("<a>",move_left)
+# window.bind("<d>",move_right)
+
+# window.bind("<Up>",move_up)
+# window.bind("<Down>", move_down)
+# window.bind("<Left>",move_left)
+# window.bind("<Right>",move_right)
+
+# canvas = Canvas(window,width=1000, height=500)
+# canvas.pack()
+
+# photoimage = PhotoImage(file="redcar.png")
+
+# myimage = canvas.create_image(100,200,image = photoimage, anchor='ne')
+
+# window.mainloop()
+
+
+#UFO
+
+# import time
+# from tkinter import *
+
+# window = Tk()
+# WIDTH = 500
+# HEIGHT = 500
+# x_velocity = 3
+# y_velocity =2
+# canvas = Canvas(window, width=WIDTH, height=HEIGHT)
+# canvas.pack()
+# space_image = PhotoImage(file="space.png")
+# my_space = canvas.create_image(0,0,image=space_image,anchor ='nw')
+# photo_image = PhotoImage(file="ufo.png")
+# my_image = canvas.create_image(0, 0, image=photo_image, anchor='nw')
+
+# image_width = photo_image.width()
+# image_height = photo_image.height()
+
+
+# while True: 
+#      corrdinate = canvas.coords(my_image)
+#      print(corrdinate
+#         )
+#      if (corrdinate[0]>=WIDTH-image_width) or corrdinate[0]<0 :
+#          x_velocity= -x_velocity 
+#      if (corrdinate[1]>=WIDTH-image_height) or corrdinate[1]<0 :
+#          y_velocity= -y_velocity     
+#      canvas.move(my_image,x_velocity,y_velocity)
+#      window.update()
+#      time.sleep(0.01)
+
+# window.mainloop()
+
+
+# for random movement
+# import tkinter as tk
+# from PIL import Image, ImageTk
+# import random
+# import time
+# # Create the main window
+# root = tk.Tk()
+# canvas = tk.Canvas(root, width=500, height=500)
+# canvas.pack()
+
+# # Load images
+# space_image = ImageTk.PhotoImage(file="space.png")  # Replace with your background image
+# ufo_image = Image.open("ufo.png").convert("RGBA")
+
+# # Create background image
+# my_space = canvas.create_image(0, 0, image=space_image, anchor='nw')
+
+# # Create UFO image
+# ufo_photo = ImageTk.PhotoImage(ufo_image)
+# my_image = canvas.create_image(0, 0, image=ufo_photo, anchor='nw')
+
+# # Function to gradually change transparency
+# def fade_in(image_id, alpha=0):
+#     if alpha < 255:
+#         alpha += 5  # Increase alpha value
+#         # Create a new image with the updated alpha
+#         temp_image = ufo_image.copy()
+#         temp_image.putalpha(alpha)  # Set the alpha channel
+#         updated_image = ImageTk.PhotoImage(temp_image)
+        
+#         # Update the canvas image
+#         canvas.itemconfigure(image_id, image=updated_image)
+#         canvas.image = updated_image  # Keep a reference to avoid garbage collection
+
+#         # Call this function again after a short delay
+#         canvas.after(100, fade_in, image_id, alpha)
+# velocity_x= 0.1
+# velocity_y =1
+# # Function to move the UFO randomly within the canvas
+# def move_ufo(image_id):
+#     # Get the current position of the UFO
+#     x, y = canvas.coords(image_id)
+    
+#     # Get the dimensions of the UFO image
+#     ufo_width, ufo_height = ufo_image.size
+
+#     # Generate random offsets
+#     dx = random.randint(-100, 100)  # Random horizontal movement
+#     dy = random.randint(-100, 100)  # Random vertical movement
+
+#     # Update the position
+#     new_x = x + dx+velocity_x
+#     new_y = y + dy+velocity_y
+
+#     # Ensure the UFO stays within the canvas boundaries
+#     new_x = max(0, min(new_x, 500 - ufo_width))  # Width of the canvas minus UFO width
+#     new_y = max(0, min(new_y, 500 - ufo_height))  # Height of the canvas minus UFO height
+#     print(x,y)
+#     # Move the UFO to the new position
+#     canvas.coords(image_id, new_x, new_y)
+    
+#     # Call this function again after a short     delay
+#     canvas.after(1000, move_ufo, image_id)
+#     root.update()
+#     time.sleep(0.01)
+# # Start the fade-in effect
+# fade_in(my_image)
+
+# # Start the random movement
+# move_ufo(my_image)
+
+
+# # Start the Tkinter main loop
+# root.mainloop()
